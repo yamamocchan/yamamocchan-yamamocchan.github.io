@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@import url(sanitize.css);
+
+
+/*/////////////////////////////////////////////////////////////*/
+
+.tableArea {
+    margin         : auto;             /* 自動位置   */
+    border-collapse: collapse;         /* 境界線結合 */
+    border-spacing : 0;                /* 罫線間余白 */
+    font-size      : 9pt;              /* 文字サイズ */
+    background     : #ffffff;          /* テーブル全体の背景色 */
+  }
+   /* --- ヘッダーのスタイル指定 ------------------- */
+  .tableArea th {
+    text-align    : center;            /* 文字位置  */
+    padding       : 5px;               /* 余白      */
+    /* border        : 1px #666666 solid;罫線       */
+    border: 0px none;
+    background    : #2C3E5C;           /* 背景色    */
+  }
+   /* --- 明細のスタイル指定 ----------------------- */
+  .tableArea td {
+    padding       : 5px;               /* 余白      */
+    /* border        : 1px #666666 solid; 罫線      */
+    cursor        : pointer;           /* カーソル  */
+  }
+   /* --- セルにカーソルが乗ったとき --------------- */
+  .tableArea td:hover {
+    background    : #ff7f50;           /* 背景色    */
+    color         : #ffffff;           /* 文字色    */
+  }
+
+  .rowlink-td-nohover {
+    pointer-events: none;
+  }
+  .line4 {
+    border: solid 1px green;
+  }
+/*/////////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////////*/
+
+caption {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+.timeTable {
+    clear: both;
+}
+.col2of4 {
+    width: 400px;
+    float: left;
+    zoom: 1;
+}
+.tableBox{
+    margin: 0 10px;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:0px none;
+    /* border: none; */
+}
+th,td {
+    /* border: 1px solid #fff; */
+    border:0px none;
+}
+th {
+    width: 70px;
+    font-size:12px;
+    color: #fff;
+    text-align: center;
+    background-color: #2C3E5C;
+    vertical-align: top;
+    border-style:0px none;
+
+}
+td {
+    height: 25px;
+    padding: 0 10px;
+    font-size: 14px;
+    text-align: center;
+    /* background: #f3f4ef; */
+    border-style:0px none;
+
+}
+.borderNone {
+    border-bottom: 1px solid #2C3E5C;
+    height: 37px;
+
+}
+.tableBox th.just {
+    padding-top: 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+.color01{
+    background:#D8C8AE;
+}
+.color02 {
+    background: #80B7E8;
+}
+.line2 {
+    height: 51px;
+}
+.line3 {
+    height: 77px;
+}
+.line4 {
+    height: 37px;
+}
+/*/////////////////////////////////////////////////////////////*/
+
+
+
+/* 全体 */
+body {
+    font-family: Hannari, serif, sans-serif;
+    /*"Sawarabi Mincho",伝わるデザイン "メイリオ"*/
+    /* background-image: url("../img/bg-checkered.gif"); */
+
+}
+
+/**/
+.container {
+    /* width: 800px; */
+    max-width: 1000px;/*RWD*//*元800px*/
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);/*30%の影*/
+
+    background-color: #F9FAE8;
+
+}
+
+/* 自己紹介ページ　header *//*cocoa*/
+header h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    /* font-family: sans-serif;Google fonts */
+    font-family: Hannari, serif, sans-serif;
+
+}
+header {
+    background-color: #E0D2A8;
+    /* padding: 10px; */
+    color: #fff;
+    height: 100px;
+    background: url(../img/header.png) center / cover;
+    border-bottom: 5px solid #005500;
+}
+
+button:focus {
+	outline:0;
+}
+
+
+
+table   {
+    text-align: center;
+    margin-left:auto;margin-right:auto;
+}
+
+#localAichi{
+    text-align: center;
+}
+
+
+/* ナビゲーションの横並び */
+/* https://uxmilk.jp/60712 */
+#nav {
+    list-style: none;
+    overflow: hidden;
+    /* border: solid red; */
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    /* width:70%; */
+  }
+  #nav li {
+    width: 15%;
+    text-align: center;
+
+    margin-top: 18px;
+    font-size: 20px;
+    display: inline-block;/*横並び*/
+    border-radius: 15px 15px 0 0; /*角丸*/ 
+  }
+  #nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    
+    padding: 10% auto;
+
+
+  }
+  #nav li a:hover{
+    color: #fff;
+    font-weight: bold;
+    background-color: #005500;
+    padding: 0 10px;
+    border-radius: 10px 10px 0 0; /*角丸*/      
+    
+  }
+
+/* name articleタグspanタグ*/
+
+article span {
+    font-size: 40px;
+    font-weight: bold;
+    /* border: solid red; */
+    /* text-align: */
+}
+
+
+.topProfile {
+    width: 100%;
+}
+.topImg {/*imgの親要素*/
+    width: 100%;
+    text-align: center;/*中央寄せ*/
+    background-color: #F9FAE8;
+}
+
+
+/*マウスオーバーで画像を透明化*/
+.topImg img{
+    /*CSSアニメーション*/
+    transition-property: opacity;/*どのプロパティを対象とするか*/
+    transition-duration: 0.5s;/*何秒かけるか*/
+    transition-timing-function: ease;/*最初と最後がゆっくり*/
+    transition-delay: 0s;/*遅れ*/
+}
+
+
+.topImg img:hover{
+    opacity: .5;/*透明度*/
+    border: none;
+}
+
+
+#prof{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    background-color: #F9FAE8;
+
+}
+
+.topName {
+    width: 100%;
+    text-align: center;/*中央寄せ*/
+}
+
+
+footer {
+    text-align: right;
+    background-color:#005500;
+    color: #fff;
+}
+
+
+
+  /*ボタン*/
+  button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+  button img {
+    display: block;
+    border: 0;
+    /*画像の下に空きが出るのを防ぐ*/
+  }
+  img {
+      border: 0;
+  }
+
+/*レスポンシブウェブデザイン */
+@media only screen and (max-width: 800px){
+  
+
+    header h1 {
+        font-size: 20px;
+    }
+
+   
+
+    #nav li {
+        width: 25%;
+        text-align: center;
+        background-color:#005500;
+      
+        font-size: 15px;
+        display: inline-block;
+        margin-top: 50px;
+        padding: 0;
+
+      }
+
+
+    article span {
+        font-size: 20px;
+    }
+}
+
+
+
+  /* フォーム入力 */
+
+
+.survey {
+    background-color: #fff;
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.survey p{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.survey input {
+    border: none;
+    border-bottom:  1px solid #d1d1d1;
+    font-size: 1em;
+    width: 100%;
+}
+
+
+#button{ 
+    width: 20%;
+    background-color: #005500;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0, .4);
+    font-size: 1em;
+}
+
+.controlForm {
+    margin: 1em;
+    text-align: left;
+    font-size: 1em;
+}
+.controlButton {
+    margin: 1em;
+    text-align: center;
+}
+
