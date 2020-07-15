@@ -4,7 +4,7 @@
     <html>
         <head>
             <meta charset="UTF-8">
-            <link rel="stylesheet" href="./css/profile.css">
+            <link rel="stylesheet" href="../css/profile.css">
             <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet"><!--フォント-->
             <title>sampleページ</title>
         </head>
@@ -17,10 +17,10 @@
                 </ul>
             </header>
             <article>
-
-
+ 
+                 
                 <div class="tableBox">
-                  <table class="tableArea" id="makeImg" onclick="frameClick('aaa')">
+                  <table class="tableArea" id="makeImg" >
                     <!-- 追加↑ -->
                     <caption>今日の予定</caption>
                     <tbody>
@@ -31,35 +31,35 @@
                         <th>Cさん</th>
                         <th>Dさん</th>
                       <tr>
-                        <th class="just borderNone">8:00</th>
+                        <th class="just borderNone">8:00</th> 
                       </tr>
                       <tr>
                         <th class="line4 borderNone">8:15</th>
                       </tr>
                       <tr>
                         <th class="line4 borderNone" >8:30</th>
-                       <td class="line4 color02" rowspan="2">お好み焼き</td>
-                       <td class="line4 color02" rowspan="2">Aお好み焼き</td>
-
-
+                       <td class="line4 color02" rowspan="2" onclick="frameClick('お好み焼き')">お好み焼き</td>
+                       <td class="line4 color02" rowspan="2" onclick="frameClick('A')">Aお好み焼き</td>
+                      
+                       
                       </tr>
                       <tr>
                         <th class="line4 borderNone">8:45</th>
 
                        <td class="rowlink-td-nohover"></td>
                        <td class="rowlink-td-nohover"></td>
-                        <td class="line4 color02" rowspan="2">Bお好み焼き</td>
-
+                        <td class="line4 color02" rowspan="2" onclick="frameClick('B')">Bお好み焼き</td>
+                       
 
                       </tr>
 
                       <tr>
                         <th class="just borderNone">9:00</th>
                       </tr>
-
+                     
                       <tr>
                       <th class="line4 borderNone">9:15</th>
-                      <td class="line4 color02"  rowspan="4">りんご飴</td>
+                      <td class="line4 color02"  rowspan="4" onclick="frameClick('リンゴ')">りんご飴</td>
                       </tr>
                       <tr>
                         <th class="line4 borderNone">9:30</th>
@@ -73,26 +73,26 @@
                         <th class="just borderNone">10:00</th>
                         <td class="rowlink-td-nohover"></td>
                         <td class="rowlink-td-nohover"></td>
-                        <td class="line4 color02" rowspan="2">Cお好み焼き</td>
+                        <td class="line4 color02" rowspan="2" onclick="frameClick('C')">Cお好み焼き</td>
                         <td class="rowlink-td-nohover"></td>
 
                       </tr>
                       <tr>
                         <th class="line4 borderNone">10:15</th>
                       </tr>
-
+                      
                       <tr>
                         <th class="line4 borderNone">10:30</th>
                       </tr>
                       <tr>
                         <th class="line4 borderNone">10:45</th>
-                        <td class="line4 color02">クリームソーダ</td>
+                        <td class="line4 color02" onclick="frameClick('クリームソーダ')">クリームソーダ</td>
                       </tr>
 
-
+                      
                       <tr>
                         <th class="just borderNone">11:00</th>
-                        <td class="line4 color02">ひよこ</td>
+                        <td class="line4 color02" onclick="frameClick('ひよこ')">ひよこ</td>
                       </tr>
                       <tr>
                         <th class="line4 borderNone">11:15</th>
@@ -102,7 +102,7 @@
                       </tr>
                       <tr>
                         <th class="line4 borderNone">11:45</th>
-                        <td class="line4 color02">クリームソーダ</td>
+                        <td class="line4 color02" onclick="frameClick('クリームソーダ')">クリームソーダ</td>
                       </tr>
                     </tbody>
                   </table>
@@ -111,12 +111,13 @@
 
 
 
-
+        
             </article>
-
+          
           </div>
-
-        <script src="./js/script.js"></script>
+        
+        <script src="../js/script.js"></script>
         </body>
-
+        
         </html>
+        
