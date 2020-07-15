@@ -9,15 +9,15 @@
     border-collapse: collapse;         /* 境界線結合 */
     border-spacing : 0;                /* 罫線間余白 */
     font-size      : 9pt;              /* 文字サイズ */
-    background     : #ffffff;          /* テーブル全体の背景色 */
+    background     : rgb(49, 107, 49);          /* テーブル全体の背景色 */
   }
    /* --- ヘッダーのスタイル指定 ------------------- */
   .tableArea th {
     text-align    : center;            /* 文字位置  */
     padding       : 5px;               /* 余白      */
-    /* border        : 1px #666666 solid;罫線       */
+    /* border        : 1px white solid;罫線       */
     border: 0px none;
-    background    : #2C3E5C;           /* 背景色    */
+    background    :  rgb(49, 107, 49);           /* 背景色    */
   }
    /* --- 明細のスタイル指定 ----------------------- */
   .tableArea td {
@@ -27,15 +27,15 @@
   }
    /* --- セルにカーソルが乗ったとき --------------- */
   .tableArea td:hover {
-    background    : #ff7f50;           /* 背景色    */
-    color         : #ffffff;           /* 文字色    */
+    background    : #eba70a;           /* 背景色    */
+    color         : #141313;           /* 文字色    */
   }
 
   .rowlink-td-nohover {
     pointer-events: none;
   }
   .line4 {
-    border: solid 1px green;
+    border: solid 1px white;
   }
 /*/////////////////////////////////////////////////////////////*/
 
@@ -106,7 +106,7 @@ td {
     background:#D8C8AE;
 }
 .color02 {
-    background: #80B7E8;
+    background: #f8ed85;
 }
 .line2 {
     height: 51px;
